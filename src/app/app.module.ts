@@ -19,7 +19,10 @@ import { dummyBackendProvider } from '../app/interceptors/dummy.backend.intercep
   providers: [
     StatusBar,
     SplashScreen,
+
+    // Remove this line if you want to use the real BFF API
     dummyBackendProvider,
+    
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
