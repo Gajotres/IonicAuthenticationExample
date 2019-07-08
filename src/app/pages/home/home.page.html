@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Home Page</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-card *ngIf="user">
+		<ion-card-header>
+			<ion-card-subtitle>Welcome:</ion-card-subtitle>
+			<ion-card-title >{{user.firstName}} {{user.lastName}}</ion-card-title>
+		</ion-card-header>
+	</ion-card>	
+	<ion-button expand="block" size="large" type="reset" (click)="logout()">Logout</ion-button> 
+</ion-content>
